@@ -23,18 +23,26 @@ function App() {
     );
   }
 
-  return (
-    <>
-      <Logo />
-      <Form onAddItems={handleItems} />
-      <PackingList
-        item={items}
-        onDeleteItem={handleDelete}
-        onToggleItem={handleToggleItem}
-      />
-      <Stats items={items} />
-    </>
-  );
+   function handleClearList() {
+     const confirmed = window.confirm(
+       "Are you sure, you want to delete all items?"
+     );
+     if (confirmed) setItems([]);
+   }
+
+   return (
+     <>
+       <Logo />
+       <Form onAddItems={handleItems} />
+       <PackingList
+         item={items}
+         onDeleteItem={handleDelete}
+         onToggleItem={handleToggleItem}
+         onClearList={handleClearList}
+       />
+       <Stats items={items} />
+     </>
+   );
 }
 
 export default App
