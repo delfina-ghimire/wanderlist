@@ -15,9 +15,10 @@ html {
 body {
   font-size: 2.4rem;
   font-family: sans-serif;
-  color: #5a3e2b;
+  color: #e1e388;
   font-family: "Quicksand";
   font-weight: 500;
+  background-color: #d6debb;
 }
 
 .app {
@@ -29,7 +30,7 @@ body {
 
 h1 {
   text-align: center;
-  background-color: #f4a226;
+  background-color: #89A25B;
   font-family: "Monoton";
   font-size: 8rem;
   text-transform: uppercase;
@@ -40,7 +41,7 @@ h1 {
 }
 
 .add-form {
-  background-color: #e5771f;
+  background-color: #A8B875;
   padding: 2.8rem 0;
   display: flex;
   align-items: center;
@@ -65,11 +66,12 @@ input {
   font-weight: 700;
   font-size: 1.8rem;
   cursor: pointer;
+ 
 }
 
 .add-form button {
   text-transform: uppercase;
-  background-color: #76c7ad;
+  background-color:#FCD68D;
 }
 
 .list {
@@ -96,7 +98,7 @@ input {
 .list ul {
   list-style: none;
   width: 80%;
-  overflow: scroll;
+  overflow: auto;
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -127,7 +129,8 @@ input[type="checkbox"] {
 }
 
 .stats {
-  background-color: #76c7ad;
+  background-color:#FCD68D;
+  color: #5a3e2b;
   text-align: center;
   font-weight: 700;
   padding: 3.2rem 0;
